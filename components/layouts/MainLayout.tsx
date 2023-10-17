@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 
@@ -8,7 +9,7 @@ import styles from './MainLayout.module.css';
 const inter = Inter({ subsets: ['latin'] });
 
 
-export const MainLayout = ({ children }) => {
+export const MainLayout: FC<{ children: JSX.Element }> = ({ children }) => {
   return (
     <>
       <Head>
